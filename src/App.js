@@ -20,11 +20,11 @@ class App extends Component {
         <form>
           <div className="form-group">
             <label htmlFor="word-1">Word 1</label>
-            <input type="text" className="form-control" id="word-1" placeholder="Cinema" />
+            <input type="text" className="form-control" id="word-1" placeholder="Word 1" defaultValue="Cinema" />
           </div>
           <div className="form-group">
             <label htmlFor="word-2">Word 2</label>
-            <input type="text" className="form-control" id="word-2" placeholder="Iceman" />
+            <input type="text" className="form-control" id="word-2" placeholder="Word 2" defaultValue="Iceman" />
           </div>
           <SubmitBtn>Is It An Anagram?</SubmitBtn>
         </form>
