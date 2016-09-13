@@ -6,7 +6,11 @@ import './css/index.css';
 import './css/new-age.min.css';
 import './css/device-mockups/device-mockups.min.css';
 
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+
 ReactDOM.render(
   <App />,
-  document.getElementById('root')
+  document.getElementById('demo-screen-1')
 );
