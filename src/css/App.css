@@ -1,0 +1,40 @@
+.validation-required, .validation-required:focus {
+  border: 2px solid red;
+}
+
+#output {
+  position: absolute;
+  top: 38%;
+  transform: translateY(-38%);
+  left: 50%;
+  transform: translateX(-50%);
+  border: 3px solid white;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  transition: background-color .80s;
+}
+
+#output i {
+  position: relative;
+  margin: 30px;
+}
+
+#output.anagram-true, #output.anagram-false {
+  width: 80px;
+  height: 80px;
+  opacity: 0;
+  transition: opacity 3s linear;
+}
+
+.anagram-true {
+  background-color: green;
+}
+
+.anagram-false {
+  background-color: #aa0000;
+}
+
+#output.reset {
+  opacity: 1;
+}

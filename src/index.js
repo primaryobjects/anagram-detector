@@ -9,5 +9,5 @@ import './css/device-mockups/device-mockups.min.css';
 
 ReactDOM.render(
   <App />,
-  document.getElementById('demo-screen-1')
+  document.getElementById('root')
 );

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { AnagramManager } from './js/anagram';
 
 export default class SubmitBtn extends Component {
   constructor(props) {
@@ -8,7 +9,11 @@ export default class SubmitBtn extends Component {
   };
 
   click(e) {
-    AnagramManager.isAnagram(this.props.word1, this.props.word2);
+    if (this.props.word1 && this.props.word2) {
+      // Call parent's onResult() method, passing in the result value.
+      this.props.onResult(AnagramManager.isAnagram(this.props.word1, this.props.word2));
+    }
+
     e.preventDefault();
   };
 
